@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		276095841E4AE1390033AF5D /* capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095831E4AE1390033AF5D /* capture.swift */; };
+		276095D41E4AFFC00033AF5D /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095BC1E4AFFC00033AF5D /* SocketAckEmitter.swift */; };
+		276095D51E4AFFC00033AF5D /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095BD1E4AFFC00033AF5D /* SocketAckManager.swift */; };
+		276095D61E4AFFC00033AF5D /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095BE1E4AFFC00033AF5D /* SocketAnyEvent.swift */; };
+		276095D71E4AFFC00033AF5D /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095BF1E4AFFC00033AF5D /* SocketClientManager.swift */; };
+		276095D81E4AFFC00033AF5D /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C01E4AFFC00033AF5D /* SocketEngine.swift */; };
+		276095D91E4AFFC00033AF5D /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C11E4AFFC00033AF5D /* SocketEngineClient.swift */; };
+		276095DA1E4AFFC00033AF5D /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C21E4AFFC00033AF5D /* SocketEnginePacketType.swift */; };
+		276095DB1E4AFFC00033AF5D /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C31E4AFFC00033AF5D /* SocketEnginePollable.swift */; };
+		276095DC1E4AFFC00033AF5D /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C41E4AFFC00033AF5D /* SocketEngineSpec.swift */; };
+		276095DD1E4AFFC00033AF5D /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C51E4AFFC00033AF5D /* SocketEngineWebsocket.swift */; };
+		276095DE1E4AFFC00033AF5D /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C61E4AFFC00033AF5D /* SocketEventHandler.swift */; };
+		276095DF1E4AFFC00033AF5D /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C71E4AFFC00033AF5D /* SocketExtensions.swift */; };
+		276095E01E4AFFC00033AF5D /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C81E4AFFC00033AF5D /* SocketIOClient.swift */; };
+		276095E11E4AFFC00033AF5D /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095C91E4AFFC00033AF5D /* SocketIOClientConfiguration.swift */; };
+		276095E21E4AFFC00033AF5D /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CA1E4AFFC00033AF5D /* SocketIOClientOption.swift */; };
+		276095E31E4AFFC00033AF5D /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CB1E4AFFC00033AF5D /* SocketIOClientSpec.swift */; };
+		276095E41E4AFFC00033AF5D /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CC1E4AFFC00033AF5D /* SocketIOClientStatus.swift */; };
+		276095E51E4AFFC00033AF5D /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CD1E4AFFC00033AF5D /* SocketLogger.swift */; };
+		276095E61E4AFFC00033AF5D /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CE1E4AFFC00033AF5D /* SocketPacket.swift */; };
+		276095E71E4AFFC00033AF5D /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095CF1E4AFFC00033AF5D /* SocketParsable.swift */; };
+		276095E81E4AFFC00033AF5D /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095D01E4AFFC00033AF5D /* SocketStringReader.swift */; };
+		276095E91E4AFFC00033AF5D /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095D11E4AFFC00033AF5D /* SocketTypes.swift */; };
+		276095EA1E4AFFC00033AF5D /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095D21E4AFFC00033AF5D /* SSLSecurity.swift */; };
+		276095EB1E4AFFC00033AF5D /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276095D31E4AFFC00033AF5D /* WebSocket.swift */; };
+		2782ABCD1E2C956A00175ED7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782ABCC1E2C956A00175ED7 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2782ABC71E2C956A00175ED7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		276095831E4AE1390033AF5D /* capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = capture.swift; sourceTree = "<group>"; };
+		276095BC1E4AFFC00033AF5D /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		276095BD1E4AFFC00033AF5D /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		276095BE1E4AFFC00033AF5D /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		276095BF1E4AFFC00033AF5D /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
+		276095C01E4AFFC00033AF5D /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		276095C11E4AFFC00033AF5D /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		276095C21E4AFFC00033AF5D /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		276095C31E4AFFC00033AF5D /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		276095C41E4AFFC00033AF5D /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		276095C51E4AFFC00033AF5D /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		276095C61E4AFFC00033AF5D /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		276095C71E4AFFC00033AF5D /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketExtensions.swift; sourceTree = "<group>"; };
+		276095C81E4AFFC00033AF5D /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		276095C91E4AFFC00033AF5D /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		276095CA1E4AFFC00033AF5D /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		276095CB1E4AFFC00033AF5D /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		276095CC1E4AFFC00033AF5D /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		276095CD1E4AFFC00033AF5D /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		276095CE1E4AFFC00033AF5D /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		276095CF1E4AFFC00033AF5D /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		276095D01E4AFFC00033AF5D /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		276095D11E4AFFC00033AF5D /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		276095D21E4AFFC00033AF5D /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		276095D31E4AFFC00033AF5D /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		2782ABC91E2C956A00175ED7 /* Emotions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Emotions; sourceTree = BUILT_PRODUCTS_DIR; };
+		2782ABCC1E2C956A00175ED7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2782ABC61E2C956A00175ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276095BA1E4AFFB10033AF5D /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				276095BB1E4AFFC00033AF5D /* Source */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		276095BB1E4AFFC00033AF5D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				276095BC1E4AFFC00033AF5D /* SocketAckEmitter.swift */,
+				276095BD1E4AFFC00033AF5D /* SocketAckManager.swift */,
+				276095BE1E4AFFC00033AF5D /* SocketAnyEvent.swift */,
+				276095BF1E4AFFC00033AF5D /* SocketClientManager.swift */,
+				276095C01E4AFFC00033AF5D /* SocketEngine.swift */,
+				276095C11E4AFFC00033AF5D /* SocketEngineClient.swift */,
+				276095C21E4AFFC00033AF5D /* SocketEnginePacketType.swift */,
+				276095C31E4AFFC00033AF5D /* SocketEnginePollable.swift */,
+				276095C41E4AFFC00033AF5D /* SocketEngineSpec.swift */,
+				276095C51E4AFFC00033AF5D /* SocketEngineWebsocket.swift */,
+				276095C61E4AFFC00033AF5D /* SocketEventHandler.swift */,
+				276095C71E4AFFC00033AF5D /* SocketExtensions.swift */,
+				276095C81E4AFFC00033AF5D /* SocketIOClient.swift */,
+				276095C91E4AFFC00033AF5D /* SocketIOClientConfiguration.swift */,
+				276095CA1E4AFFC00033AF5D /* SocketIOClientOption.swift */,
+				276095CB1E4AFFC00033AF5D /* SocketIOClientSpec.swift */,
+				276095CC1E4AFFC00033AF5D /* SocketIOClientStatus.swift */,
+				276095CD1E4AFFC00033AF5D /* SocketLogger.swift */,
+				276095CE1E4AFFC00033AF5D /* SocketPacket.swift */,
+				276095CF1E4AFFC00033AF5D /* SocketParsable.swift */,
+				276095D01E4AFFC00033AF5D /* SocketStringReader.swift */,
+				276095D11E4AFFC00033AF5D /* SocketTypes.swift */,
+				276095D21E4AFFC00033AF5D /* SSLSecurity.swift */,
+				276095D31E4AFFC00033AF5D /* WebSocket.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2782ABC01E2C956A00175ED7 = {
+			isa = PBXGroup;
+			children = (
+				276095BA1E4AFFB10033AF5D /* SocketIO */,
+				2782ABCB1E2C956A00175ED7 /* Emotions */,
+				2782ABCA1E2C956A00175ED7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2782ABCA1E2C956A00175ED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2782ABC91E2C956A00175ED7 /* Emotions */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2782ABCB1E2C956A00175ED7 /* Emotions */ = {
+			isa = PBXGroup;
+			children = (
+				2782ABCC1E2C956A00175ED7 /* main.swift */,
+				276095831E4AE1390033AF5D /* capture.swift */,
+			);
+			path = Emotions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2782ABC81E2C956A00175ED7 /* Emotions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2782ABD01E2C956A00175ED7 /* Build configuration list for PBXNativeTarget "Emotions" */;
+			buildPhases = (
+				2782ABC51E2C956A00175ED7 /* Sources */,
+				2782ABC61E2C956A00175ED7 /* Frameworks */,
+				2782ABC71E2C956A00175ED7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emotions;
+			productName = Emotions;
+			productReference = 2782ABC91E2C956A00175ED7 /* Emotions */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2782ABC11E2C956A00175ED7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = HCDE;
+				TargetAttributes = {
+					2782ABC81E2C956A00175ED7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2782ABC41E2C956A00175ED7 /* Build configuration list for PBXProject "Emotions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2782ABC01E2C956A00175ED7;
+			productRefGroup = 2782ABCA1E2C956A00175ED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2782ABC81E2C956A00175ED7 /* Emotions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2782ABC51E2C956A00175ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276095E01E4AFFC00033AF5D /* SocketIOClient.swift in Sources */,
+				276095DF1E4AFFC00033AF5D /* SocketExtensions.swift in Sources */,
+				276095DD1E4AFFC00033AF5D /* SocketEngineWebsocket.swift in Sources */,
+				276095E21E4AFFC00033AF5D /* SocketIOClientOption.swift in Sources */,
+				276095E31E4AFFC00033AF5D /* SocketIOClientSpec.swift in Sources */,
+				276095E41E4AFFC00033AF5D /* SocketIOClientStatus.swift in Sources */,
+				276095E51E4AFFC00033AF5D /* SocketLogger.swift in Sources */,
+				276095D61E4AFFC00033AF5D /* SocketAnyEvent.swift in Sources */,
+				276095E81E4AFFC00033AF5D /* SocketStringReader.swift in Sources */,
+				276095EB1E4AFFC00033AF5D /* WebSocket.swift in Sources */,
+				276095E71E4AFFC00033AF5D /* SocketParsable.swift in Sources */,
+				276095E91E4AFFC00033AF5D /* SocketTypes.swift in Sources */,
+				276095DE1E4AFFC00033AF5D /* SocketEventHandler.swift in Sources */,
+				276095D91E4AFFC00033AF5D /* SocketEngineClient.swift in Sources */,
+				276095E61E4AFFC00033AF5D /* SocketPacket.swift in Sources */,
+				276095D51E4AFFC00033AF5D /* SocketAckManager.swift in Sources */,
+				276095DC1E4AFFC00033AF5D /* SocketEngineSpec.swift in Sources */,
+				276095D41E4AFFC00033AF5D /* SocketAckEmitter.swift in Sources */,
+				276095D81E4AFFC00033AF5D /* SocketEngine.swift in Sources */,
+				276095841E4AE1390033AF5D /* capture.swift in Sources */,
+				2782ABCD1E2C956A00175ED7 /* main.swift in Sources */,
+				276095E11E4AFFC00033AF5D /* SocketIOClientConfiguration.swift in Sources */,
+				276095EA1E4AFFC00033AF5D /* SSLSecurity.swift in Sources */,
+				276095DB1E4AFFC00033AF5D /* SocketEnginePollable.swift in Sources */,
+				276095DA1E4AFFC00033AF5D /* SocketEnginePacketType.swift in Sources */,
+				276095D71E4AFFC00033AF5D /* SocketClientManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2782ABCE1E2C956A00175ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2782ABCF1E2C956A00175ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2782ABD11E2C956A00175ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2782ABD21E2C956A00175ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2782ABC41E2C956A00175ED7 /* Build configuration list for PBXProject "Emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2782ABCE1E2C956A00175ED7 /* Debug */,
+				2782ABCF1E2C956A00175ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2782ABD01E2C956A00175ED7 /* Build configuration list for PBXNativeTarget "Emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2782ABD11E2C956A00175ED7 /* Debug */,
+				2782ABD21E2C956A00175ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2782ABC11E2C956A00175ED7 /* Project object */;
+}

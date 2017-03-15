@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Emotion Stub Server</title>
+	</head>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io();
+		socket.on('data', function(data) {
+			var node = document.createElement("LI");
+			var textnode = document.createTextNode('Response: ' + data.response + 'Reference: ' + data.reference + 'Time: ' + data.time);
+			node.appendChild(textnode);
+			document.getElementById("incoming").appendChild(node);
+		});
+		function sendMessage(){
+			var msg = document.getElementById('outtext').value;
+			if(msg) {
+				socket.emit('test', msg);
+			}
+		}
+	</script>
+	<body>
+		<input type="text" id="outtext" autocomplete="off"/><button onclick="sendMessage()">Send</button>
+		<div><ul id='incoming'></ul></div>
+	</body>
+</html>

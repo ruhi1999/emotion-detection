@@ -1,0 +1,9 @@
+{
+  "name": "emotion-server-stub",
+  "version": "0.0.1",
+  "description": "Server stub for emotion project using socket.io",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.7.2"
+  }
+}
