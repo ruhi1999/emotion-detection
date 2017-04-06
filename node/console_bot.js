@@ -1,24 +1,71 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           ______     ______     ______   __  __     __     ______
+          /\  == \   /\  __ \   /\__  _\ /\ \/ /    /\ \   /\__  _\
+          \ \  __<   \ \ \/\ \  \/_/\ \/ \ \  _"-.  \ \ \  \/_/\ \/
+           \ \_____\  \ \_____\    \ \_\  \ \_\ \_\  \ \_\    \ \_\
+            \/_____/   \/_____/     \/_/   \/_/\/_/   \/_/     \/_/
 
-if (!process.env.token) {
-    console.log('Error: Specify token in environment');
-    process.exit(1);
-}
+
+This is a sample Console bot built with Botkit.
+
+This bot demonstrates many of the core features of Botkit:
+
+* Receive messages based on "spoken" patterns
+* Reply to messages
+* Use the conversation system to ask questions
+* Use the built in storage system to store and retrieve information
+  for a user.
+
+# RUN THE BOT:
+
+  Run your bot from the command line:
+
+    node console_bot.js
+
+# USE THE BOT:
+
+  Say: "Hello"
+
+  The bot will reply "Hello!"
+
+  Say: "who are you?"
+
+  The bot will tell you its name, where it is running, and for how long.
+
+  Say: "Call me <nickname>"
+
+  Tell the bot your nickname. Now you are friends.
+
+  Say: "who am I?"
+
+  The bot will tell you your nickname, if it knows one for you.
+
+  Say: "shutdown"
+
+  The bot will ask if you are sure, and then shut itself down.
+
+  Make sure to invite your bot into other channels using /invite @<my bot>!
+
+# EXTEND THE BOT:
+
+  Botkit has many features for building cool and useful bots!
+
+  Read all about it here:
+
+    -> http://howdy.ai/botkit
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 var Botkit = require('./lib/Botkit.js');
 var os = require('os');
 
-var controller = Botkit.slackbot({
-    debug: true,
+var controller = Botkit.consolebot({
+    debug: false,
 });
 
-var bot = controller.spawn({
-    token: process.env.token
-}).startRTM();
+var bot = controller.spawn();
 
-
-
-/*controller.hears(['hello', 'hi'], 'direct_message,direct_mention,mention', function(bot, message) {
-
+controller.hears(['hello', 'hi'], 'message_received', function(bot, message) {
 
     controller.storage.users.get(message.user, function(err, user) {
         if (user && user.name) {
@@ -29,31 +76,7 @@ var bot = controller.spawn({
     });
 });
 
-var time = 0;
-
-controller.hears('ambient', function(bot, message) {
-	if(!message.contains['emotion']) {
-		time = message.ts;
-	}
-});*/
-
-controller.hears(['emotion'],'direct_mention,direct_message,mention', function(bot, message) {
-//controller.on('end',function(convo) {	
-	//if(convo.status=='stopped') {
-	console.log(message.ts, message.channel);
-	bot.api.reactions.add({
-			timestamp: message.ts,
-			channel: message.channel,
-			name: 'grinning',
-		}, function(err, res) {
-			if (err) {
-				bot.botkit.log('Failed to add emoji reaction :(', err);
-			}
-		});
-	//}
-});
-
-controller.hears(['call me (.*)', 'my name is (.*)'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['call me (.*)', 'my name is (.*)'], 'message_received', function(bot, message) {
     var name = message.match[1];
     controller.storage.users.get(message.user, function(err, user) {
         if (!user) {
@@ -68,7 +91,7 @@ controller.hears(['call me (.*)', 'my name is (.*)'], 'direct_message,direct_men
     });
 });
 
-controller.hears(['what is my name', 'who am i'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['what is my name', 'who am i'], 'message_received', function(bot, message) {
 
     controller.storage.users.get(message.user, function(err, user) {
         if (user && user.name) {
@@ -137,7 +160,7 @@ controller.hears(['what is my name', 'who am i'], 'direct_message,direct_mention
 });
 
 
-controller.hears(['shutdown'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['shutdown'], 'message_received', function(bot, message) {
 
     bot.startConversation(message, function(err, convo) {
 
